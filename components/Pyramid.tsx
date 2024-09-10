@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { MeshWobbleMaterial } from '@react-three/drei';
 
-const Pyramid = ({ color, position }) => {
+const Pyramid = ({ color, position }: {color:any, position:any}) => {
   const pyramidRef = useRef();
 
   // Animation loop: Rotate the pyramid
