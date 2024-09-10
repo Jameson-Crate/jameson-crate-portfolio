@@ -130,7 +130,7 @@ const ProjectPage = () => {
       </h1>
       <div className="flex space-x-4">
         <a
-          href="https://github.com/jameson-crate"
+          href="https://github.com/Jameson-Crate/CS180-Project1"
           className="text-gray-600 hover:text-blue-800"
         >
           <h3>Github</h3>
