@@ -8,7 +8,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 
 const ProjectPage = () => {
-  const [selectedImage, setSelectedImage] = React.useState(null);
   const [isLoading, setIsLoading] = React.useState(false);
 
   const handleImageLoad = () => {
@@ -173,7 +172,7 @@ const ProjectPage = () => {
               Sergei Mikhailovich Prokudin-Gorskii (1863-1944) [Сергей
               Михайлович Прокудин-Горский, to his Russian friends] was a man
               well ahead of his time. Convinced, as early as 1907, that color
-              photography was the wave of the future, he won Tzar's special
+              photography was the wave of the future, he won Tzar{"'"}s special
               permission to travel across the vast Russian Empire and take color
               photographs of everything he saw including the only color portrait
               of Leo Tolstoy. And he really photographed everything: people,
@@ -182,13 +181,14 @@ const ProjectPage = () => {
               scene onto a glass plate using a red, a green, and a blue filter.
               Never mind that there was no way to print color photographs until
               much later -- he envisioned special projectors to be installed in
-              "multimedia" classrooms all across Russia where the children would
-              be able to learn about their vast country. Alas, his plans never
-              materialized: he left Russia in 1918, right after the revolution,
-              never to return again. Luckily, his RGB glass plate negatives,
-              capturing the last years of the Russian Empire, survived and were
-              purchased in 1948 by the Library of Congress. The LoC has recently
-              digitized the negatives and made them available on-line.
+              &ldquo;multimedia&rdquo; classrooms all across Russia where the children
+              would be able to learn about their vast country. Alas, his plans
+              never materialized: he left Russia in 1918, right after the
+              revolution, never to return again. Luckily, his RGB glass plate
+              negatives, capturing the last years of the Russian Empire,
+              survived and were purchased in 1948 by the Library of Congress.
+              The LoC has recently digitized the negatives and made them
+              available on-line.
               <br />
               <br />
               The goal of this project was to take the digitized
@@ -216,7 +216,7 @@ const ProjectPage = () => {
               xy transformations in order to minimize some error function which
               measured the distance between pixels of two images in some
               alignment. Originally I used euclidian distance to measure the
-              difference between pixels which wasn't perfect. I found that for
+              difference between pixels which wasn&apos;t perfect. I found that for
               small images {"(< 1000 x 1000 pixels)"} computing the distance
               between images was quick, but compute time quickly grew as the
               size of images grew due to all of the distance measurements. Even
@@ -229,7 +229,7 @@ const ProjectPage = () => {
               a set of resized versions of the same image starting at a coarser
               resolution and ending at a finer resolution. In our case the
               finest resolution was the image we were trying to recreate. I used
-              scikit-image's rescale function in order to shrink the original
+              scikit-image&apos;s rescale function in order to shrink the original
               image into lower resolution images and create an image pyramid.
               Since our problem is computationally much simpler with smaller
               images we can first align the coarsest versions of the images and
@@ -282,7 +282,7 @@ const ProjectPage = () => {
           <br />
           The second optimization involved changing the distance metric from
           traditional euclidian distance to a more robust metric. In this case I
-          used scikit-learn's structural similarity metric which uses factors
+          used scikit-learn&apos;s structural similarity metric which uses factors
           other than just pixel difference in order to determine the difference
           between two images. Euclidian distance between pixels works well when
           the images are similar in brightness, but could suffer when the
@@ -347,10 +347,7 @@ const ProjectPage = () => {
                     onLoadStart={() => setIsLoading(true)}
                     onLoad={handleImageLoad}
                   />
-                  <button
-                    className="absolute top-2 right-2 bg-white rounded-full p-1"
-                    onClick={() => setSelectedImage(null)}
-                  ></button>
+                  <button className="absolute top-2 right-2 bg-white rounded-full p-1"></button>
                 </div>
               </DialogContent>
             </Dialog>
