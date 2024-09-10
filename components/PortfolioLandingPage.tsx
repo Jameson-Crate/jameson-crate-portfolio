@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { Github, Twitter, Mail, Linkedin } from "lucide-react";
 import ThreePyramid from "./Pyramid";
 
-const TypingAnimation = ({ text, className }: {text:String, className:String}) => {
+const TypingAnimation = ({ text, className }: {text:string, className:string}) => {
   const [displayText, setDisplayText] = React.useState("");
 
   React.useEffect(() => {
