@@ -244,13 +244,15 @@ const ProjectPage = () => {
         </div>
         <div className="md:w-1/3 mt-8 md:mt-0 content-center">
           <figure className="mb-8">
+            <div className="flex justify-center">
             <Image
               src="/assets/project1/monastery_input.jpg"
               alt="Original monastery image input"
               width={400}
               height={300}
-              className="w-full h-auto"
+              className="w-auto h-auto"
             />
+            </div>
             <figcaption className="text-sm text-center mt-2">
               Figure 1: Original input image of the monastery before color
               channel alignment
@@ -311,15 +313,17 @@ const ProjectPage = () => {
           {images.map((image, index) => (
             <Dialog key={index}>
               <DialogTrigger asChild>
-                <Card className="overflow-hidden cursor-pointer hover:shadow-lg transition-shadow">
+                <Card className="overflow-hidden cursor-pointer hover:shadow-lg transition-shadow justify-center">
                   <CardContent className="p-4">
-                    <Image
-                      src={`/assets/project1/${image.file}`}
-                      alt={image.name}
-                      width={300}
-                      height={225}
-                      className="w-full h-48 object-cover mb-4"
-                    />
+                    <div className="flex justify-center">
+                      <Image
+                        src={`/assets/project1/${image.file}`}
+                        alt={image.name}
+                        width={image.size[0]}
+                        height={image.size[1]}
+                        className="w-auto h-auto object-cover mb-4"
+                      />
+                    </div>
                     <h3 className="text-lg font-semibold mb-2">{image.name}</h3>
                     <p className="text-sm">
                       <strong>Red Displacement:</strong> [{image.redDisp[0]},{" "}
@@ -331,7 +335,7 @@ const ProjectPage = () => {
                   </CardContent>
                 </Card>
               </DialogTrigger>
-              <DialogContent className="max-w-[90vw] max-h-[90vh] w-auto h-auto p-0">
+              <DialogContent className="w-auto h-auto p-0">
                 <div className="relative">
                   {isLoading && (
                     <div className="absolute inset-0 flex items-center justify-center bg-white bg-opacity-75">
