@@ -33,16 +33,16 @@ const TypingAnimation = ({ text, className }: {text:string, className:string}) =
 const ProjectList = () => {
   const projects = [
     { name: "Project 1", description: "Color Channel Alignment" },
-    { name: "Project 2", description: "Coming soon" },
-    { name: "Project 3", description: "Coming soon" },
-    { name: "Project 4", description: "Coming soon" },
-    { name: "Project 5", description: "Coming soon" },
+    { name: "Project 2", description: "Convolutions and Image Filtering" },
+    { name: "Project 3", description: "Coming soon..." },
+    { name: "Project 4", description: "Coming soon..." },
+    { name: "Project 5", description: "Coming soon..." },
   ];
 
   const router = useRouter();
 
   return (
-    <div>
+    <div className="cursor-pointer">
       <h3 className="text-2xl font-semibold mb-4">Projects</h3>
       <ul className="space-y-2">
         {projects.map((project, index) => (
