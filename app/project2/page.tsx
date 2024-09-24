@@ -100,12 +100,12 @@ const ProjectPage = () => {
         <p className="text-lg">
           Edge detection in image processing is the process of automatically
           finding edges of objects in an image. Edges by definition are
-          signficant local changes an image's intensity. The gradient of a
+          signficant local changes an image&lsquo;s intensity. The gradient of a
           function represents the direction and magnitude of local change and
           since images can be represented as functions we can use the gradient
           of the image to detect the intensity of local changes in an image.
           Note that we only have discrete samples of the underlying image
-          function so we can't take the derivative directly and must instead
+          function so we can&lsquo;t take the derivative directly and must instead
           take an approximation. In this case we can recognize that the partial
           derivative for each direction of the image can be approximated by
           subtracting the value of the previous pixel from the current pixel for
@@ -743,7 +743,7 @@ const ProjectPage = () => {
           Adelson. An image spline is a smooth seam joining two image together
           by gently distorting them. Multiresolution blending computes a gentle
           seam between the two images seperately at each band of image
-          frequencies, resulting in a much smoother seam. We'll approach this
+          frequencies, resulting in a much smoother seam. We&lsquo;ll approach this
           section in two steps: creating and visualizing the Gaussian and
           Laplacian stacks and blending together images with the help of the
           completed stacks, and exploring outcomes.
