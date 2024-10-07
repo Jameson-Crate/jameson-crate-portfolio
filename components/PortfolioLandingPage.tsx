@@ -34,7 +34,7 @@ const ProjectList = () => {
   const projects = [
     { name: "Project 1", description: "Color Channel Alignment" },
     { name: "Project 2", description: "Convolutions and Image Filtering" },
-    { name: "Project 3", description: "Coming soon..." },
+    { name: "Project 3", description: "Image Warping and Face Morphing" },
     { name: "Project 4", description: "Coming soon..." },
     { name: "Project 5", description: "Coming soon..." },
   ];

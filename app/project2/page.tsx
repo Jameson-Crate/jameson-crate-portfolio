@@ -1,21 +1,8 @@
 import React from "react";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
-import katex from "katex";
 import Image from "next/image";
-
-const MathEquation = ({ equation }: { equation: string }) => {
-  const renderedEquation = katex.renderToString(equation, {
-    throwOnError: false,
-  });
-
-  return (
-    <div
-      className="flex justify-center"
-      dangerouslySetInnerHTML={{ __html: renderedEquation }}
-    />
-  );
-};
+import { MathEquation } from "@/components/ui/math-equation";
 
 const ProjectPage = () => {
   return (
