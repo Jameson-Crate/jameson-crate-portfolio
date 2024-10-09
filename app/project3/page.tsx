@@ -3,6 +3,7 @@ import { ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
 import Image from "next/image";
 import { MathEquation } from "@/components/ui/math-equation";
+import { YouTubeEmbed } from '@next/third-parties/google';
 
 const ProjectPage = () => {
     return (
@@ -544,6 +545,19 @@ const ProjectPage = () => {
                         </figcaption>
                     </figure>
                 </div>
+                <hr className="mb-4" />
+            </section>
+
+            <section className="mb-8">
+                <h2 className="text-2xl font-semibold mb-4">Merging Multiple Faces</h2>
+                <p className="text-lg">
+                    We can merge several faces in a row to get the following result.
+                </p>
+                <br />
+                <div className='flex justify-center'>
+                    <YouTubeEmbed videoid="mIXbfJYTVkQ" height={400} width={720} />
+                </div>
+                <br/>
                 <hr className="mb-4" />
             </section>
 
