@@ -2,7 +2,7 @@ import React from 'react';
 import { ArrowLeft } from 'lucide-react';
 import Link from 'next/link';
 import Image from "next/image";
-import { MathEquation } from "@/components/ui/math-equation";
+import { MathEquation } from "../components/ui/math-equation";
 import { YouTubeEmbed } from '@next/third-parties/google';
 
 const ProjectPage = () => {

@@ -5,7 +5,13 @@ import { useRouter } from "next/navigation";
 import { Github, Twitter, Mail, Linkedin } from "lucide-react";
 import ThreePyramid from "./Pyramid";
 
-const TypingAnimation = ({ text, className }: {text:string, className:string}) => {
+const TypingAnimation = ({
+  text,
+  className,
+}: {
+  text: string;
+  className: string;
+}) => {
   const [displayText, setDisplayText] = React.useState("");
 
   React.useEffect(() => {
@@ -24,7 +30,7 @@ const TypingAnimation = ({ text, className }: {text:string, className:string}) =
   }, [text]);
 
   return (
-    <div className="h-[40px] mb-6 position">
+    <div className="h-[40px] mb-6">
       <h2 className={className}>{displayText}</h2>
     </div>
   );
@@ -62,11 +68,11 @@ const ProjectList = () => {
 
 const PortfolioLandingPage = () => {
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-800 p-8 flex">
+    <div className="min-h-screen bg-gray-50 text-gray-800 p-8 md:flex">
       <div className="w-2/3 pr-8">
         <TypingAnimation
           text="{ CS180 Portfolio }"
-          className="text-4xl font-bold mb-2 absolute"
+          className="text-2xl md:text-4xl font-bold mb-2 absolute"
         />
         <h2 className="text-2xl font-semibold mb-8">{">> Jameson Crate"}</h2>
         <ThreePyramid />
@@ -97,7 +103,7 @@ const PortfolioLandingPage = () => {
           </a>
         </div>
       </div>
-      <div className="w-1/3 bg-gray-200 p-6 rounded-lg">
+      <div className="md:w-1/3 bg-gray-200 p-6 rounded-lg">
         <ProjectList />
       </div>
     </div>

@@ -4,8 +4,8 @@ import React from "react";
 import { ArrowLeft, Loader2 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-import { Card, CardContent } from "@/components/ui/card";
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import { Card, CardContent } from "../components/ui/card";
+import { Dialog, DialogContent, DialogTrigger } from "../components/ui/dialog";
 
 const ProjectPage = () => {
   const [isLoading, setIsLoading] = React.useState(false);
