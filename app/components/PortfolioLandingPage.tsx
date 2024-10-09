@@ -76,7 +76,11 @@ const PortfolioLandingPage = () => {
         />
         <h2 className="text-2xl font-semibold mb-8">{">> Jameson Crate"}</h2>
         <ThreePyramid />
-        <div className="flex space-x-4 mt-8 absolute bottom-[30px]">
+      </div>
+      <div className="md:w-1/3 bg-gray-200 p-6 rounded-lg">
+        <ProjectList />
+      </div>
+      <div className="flex space-x-4 mt-8 md:absolute bottom-[30px]">
           <a
             href="https://github.com/jameson-crate"
             className="text-gray-600 hover:text-gray-800"
@@ -102,10 +106,6 @@ const PortfolioLandingPage = () => {
             <Linkedin size={24} />
           </a>
         </div>
-      </div>
-      <div className="md:w-1/3 bg-gray-200 p-6 rounded-lg">
-        <ProjectList />
-      </div>
     </div>
   );
 };
