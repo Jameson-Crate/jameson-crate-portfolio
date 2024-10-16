@@ -71,7 +71,7 @@ const PortfolioLandingPage = () => {
     <div className="min-h-screen bg-gray-50 text-gray-800 p-8 md:flex">
       <div className="w-2/3 pr-8">
         <TypingAnimation
-          text="{ CS180 Portfolio }"
+          text="{ Computer Vision Portfolio }"
           className="text-2xl md:text-4xl font-bold mb-2 absolute"
         />
         <h2 className="text-2xl font-semibold mb-8">{">> Jameson Crate"}</h2>
