@@ -92,28 +92,28 @@ const ProjectPage = () => {
                 <br />
                 <div>
                         <MathEquation
-                            equation={`H = \\begin{bmatrix} h_{11} & h_{12} & h_{13} \\\\ h_{21} & h_{22} & h_{23} \\\\ h_{31} & h_{32} & 1 \\end{bmatrix}`}
+                            equation={"H = \\begin{bmatrix} h_{11} & h_{12} & h_{13} \\\\ h_{21} & h_{22} & h_{23} \\\\ h_{31} & h_{32} & 1 \\end{bmatrix}"}
                         />
                         <br/>
                         <MathEquation
-                            equation={`W = \\begin{bmatrix} h_{11} \\\\ h_{12} \\\\ h_{13} \\\\ h_{21} \\\\ h_{22} \\\\ h_{23} \\\\ h_{31} \\\\ h_{32} \\\\ 1 \\end{bmatrix}`}
+                            equation={"W = \\begin{bmatrix} h_{11} \\\\ h_{12} \\\\ h_{13} \\\\ h_{21} \\\\ h_{22} \\\\ h_{23} \\\\ h_{31} \\\\ h_{32} \\\\ 1 \\end{bmatrix}"}
                         />
                     <br />
 
                     <MathEquation
-                        equation={`v = \\begin{bmatrix} p1_{x} & p1_{y} & 1 & 0 & 0 & 0 & -p1_{x} \\cdot p2_{x} & -p1_{y} \\cdot p2_{x} \\end{bmatrix}`}
+                        equation={"v = \\begin{bmatrix} p1_{x} & p1_{y} & 1 & 0 & 0 & 0 & -p1_{x} \\cdot p2_{x} & -p1_{y} \\cdot p2_{x} \\end{bmatrix}"}
                     />
                     <br />
 
                     <MathEquation
-                        equation={`u = \\begin{bmatrix} 0 & 0 & 0 & p1_{x} & p1_{y} & 1 & -p1_{x} \\cdot p2_{y} & -p1_{y} \\cdot p2_{y} \\end{bmatrix}`}
+                        equation={"u = \\begin{bmatrix} 0 & 0 & 0 & p1_{x} & p1_{y} & 1 & -p1_{x} \\cdot p2_{y} & -p1_{y} \\cdot p2_{y} \\end{bmatrix}"}
                     />
                     <br />
 
                     <MathEquation
-                        equation={`\\begin{bmatrix} p1_{x} & p1_{y} & 1 & 0 & 0 & 0 & -p1_{x} \\cdot p2_{x} & -p1_{y} \\cdot p2_{x} \\\\ 0 & 0 & 0 & p1_{x} & p1_{y} & 1 & -p1_{x} \\cdot p2_{y} & -p1_{y} \\cdot p2_{y} \\end{bmatrix}
-        \\cdot \\begin{bmatrix} h_{11} \\\\ h_{12} \\\\ h_{13} \\\\ h_{21} \\\\ h_{22} \\\\ h_{23} \\\\ h_{31} \\\\ h_{32} \\\\ 1 \\end{bmatrix} = 
-        \\begin{bmatrix} p2_{x} \\\\ p2_{y} \\end{bmatrix}`}
+                        equation={"\\begin{bmatrix} p1_{x} & p1_{y} & 1 & 0 & 0 & 0 & -p1_{x} \\cdot p2_{x} & -p1_{y} \\cdot p2_{x} \\\\ 0 & 0 & 0 & p1_{x} & p1_{y} & 1 & -p1_{x} \\cdot p2_{y} & -p1_{y} \\cdot p2_{y} \\end{bmatrix} \
+        \\cdot \\begin{bmatrix} h_{11} \\\\ h_{12} \\\\ h_{13} \\\\ h_{21} \\\\ h_{22} \\\\ h_{23} \\\\ h_{31} \\\\ h_{32} \\\\ 1 \\end{bmatrix} = \
+        \\begin{bmatrix} p2_{x} \\\\ p2_{y} \\end{bmatrix}"}
                     />
                     <br />
                 </div>
