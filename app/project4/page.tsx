@@ -91,15 +91,13 @@ const ProjectPage = () => {
                 </p>
                 <br />
                 <div>
-                    <br />
-                    <div className="grid grid-cols-2">
                         <MathEquation
                             equation={`H = \\begin{bmatrix} h_{11} & h_{12} & h_{13} \\\\ h_{21} & h_{22} & h_{23} \\\\ h_{31} & h_{32} & 1 \\end{bmatrix}`}
                         />
+                        <br/>
                         <MathEquation
                             equation={`W = \\begin{bmatrix} h_{11} \\\\ h_{12} \\\\ h_{13} \\\\ h_{21} \\\\ h_{22} \\\\ h_{23} \\\\ h_{31} \\\\ h_{32} \\\\ 1 \\end{bmatrix}`}
                         />
-                    </div>
                     <br />
 
                     <MathEquation
