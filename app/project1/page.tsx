@@ -126,7 +126,7 @@ const ProjectPage = () => {
       </Link>
 
       <h1 className="text-4xl font-bold mb-4">
-        {"{ Color Channel Alignment }"}
+        Color Channel Alignment
       </h1>
       <div className="flex space-x-4">
         <a

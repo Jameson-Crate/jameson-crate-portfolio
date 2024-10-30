@@ -12,7 +12,7 @@ const ProjectPage = () => {
                 <ArrowLeft size={20} className="mr-2" />
                 Back to Portfolio
             </Link>
-            <h1 className="text-4xl font-bold mb-8">[Image Warping and Face Morphing]</h1>
+            <h1 className="text-4xl font-bold mb-8">Image Warping and Face Morphing</h1>
 
             <div className="flex space-x-4">
                 <a

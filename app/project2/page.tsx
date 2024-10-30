@@ -16,7 +16,7 @@ const ProjectPage = () => {
       </Link>
 
       <h1 className="text-4xl font-bold mb-8">
-        [ Convolutions and Image Filtering ]
+        Convolutions and Image Filtering
       </h1>
       <div className="flex space-x-4">
         <a
