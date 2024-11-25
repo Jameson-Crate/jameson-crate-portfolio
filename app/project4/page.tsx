@@ -142,11 +142,7 @@ const ProjectPage = () => {
                     check filtering project on the main page of my portfolio. Below are examples of images and their corresponding mosaics.
                 </p>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
-                    <ImageFigure src="/assets/project4/fd1.JPG" alt="Front Door 1" caption="Front Door 1" />
-                    <ImageFigure src="/assets/project4/fd2.JPG" alt="Front Door 2" caption="Front Door 2" />
-                    <ImageFigure src="/assets/project4/fd3.JPG" alt="Front Door 3" caption="Front Door 3" />
-                </div>
+
 
                 <ImageFigure src="/assets/project4/front_door_mosaic.jpg" alt="Front Door Mosaic" caption="Front Door Mosaic" />
                 <hr className="mb-4" />
