@@ -43,6 +43,7 @@ const ProjectList = () => {
     { name: "Project 3", description: "Image Warping and Face Morphing" },
     { name: "Project 4", description: "Homography and Image Stitching" },
     { name: "Project 5", description: "Denoising Diffusion Models" },
+    { name: "Project 6", description: "Neural Radiance Fields" },
   ];
 
   const router = useRouter();
