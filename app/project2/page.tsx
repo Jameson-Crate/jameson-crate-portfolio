@@ -31,12 +31,6 @@ const ProjectPage = () => {
         >
           <h3>Google Drive</h3>
         </a>
-        <a
-          href="https://inst.eecs.berkeley.edu/~cs180/fa24/"
-          className="text-gray-600 hover:text-blue-800"
-        >
-          <h3>Course Website</h3>
-        </a>
       </div>
       <hr className="mb-4" />
 
