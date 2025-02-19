@@ -32,7 +32,6 @@ const ProjectPage = () => {
                 {[
                     { href: "https://github.com/Jameson-Crate/CS180-Project6", text: "GitHub" },
                     { href: "https://drive.google.com/drive/folders/1CtAbSHUj6bNkR2TP9Fmctk6ecRbDyXMY?usp=drive_link", text: "Google Drive" },
-                    { href: "https://inst.eecs.berkeley.edu/~cs180/fa24/", text: "Course Website" },
                 ].map(({ href, text }) => (
                     <a href={href} key={text} className="text-gray-600 hover:text-blue-800" title={`Visit ${text}`} target="_blank" rel="noopener noreferrer">
                         <h3>{text}</h3>
