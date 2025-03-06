@@ -157,7 +157,7 @@ const ProjectPage = () => {
           1. To evaluate a point on the curve at parameter t, we use the de
           Casteljau algorithm which recursively applies linear interpolation
           between pairs of control points. Given n control points, we compute
-          n-1 intermediate points using linear interpolation: p_i' = (1-t)p_i +
+          n-1 intermediate points using linear interpolation: p_i&apos; = (1-t)p_i +
           tp_(i+1). By repeating this process recursively, we eventually arrive
           at a single point that lies on the Bezier curve at parameter t. This
           elegant geometric construction allows us to efficiently evaluate
@@ -256,7 +256,7 @@ const ProjectPage = () => {
           aspect of triangle meshes is computing vertex normals, which are
           essential for smooth shading. For each vertex, we calculate an
           area-weighted normal by iterating through all faces incident to that
-          vertex, weighting each face's normal by its area, and then normalizing
+          vertex, weighting each face&apos;s normal by its area, and then normalizing
           the sum. This allows us to achieve smooth Phong shading across the
           mesh surface, providing much better visual results than flat shading,
           especially for curved surfaces. The process involves using a half-edge
@@ -474,18 +474,67 @@ const ProjectPage = () => {
         <hr className="mt-8" />
       </section>
 
-      {/* <section id="upsampling" className="mb-8">
+      <section id="upsampling" className="mb-8">
         <h2 className="text-2xl font-semibold mb-4">Gallery</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-8">
           <ImageFigure
-            src="/assets/project8/q2-4/cube-1.png"
-            alt="Cube Upsample"
-            caption="Cube Mesh"
+            src="/assets/project8/gallery/rough-torus.png"
+            alt="Gallery Picture"
+            caption="Torus"
+            width={750}
+            height={500}
+          />
+          <ImageFigure
+            src="/assets/project8/gallery/torus.png"
+            alt="Gallery Picture"
+            caption="Torus (Upsampled)"
+            width={750}
+            height={500}
+          />
+          <ImageFigure
+            src="/assets/project8/gallery/rough-icosahedron.png"
+            alt="Gallery Picture"
+            caption="icosahedron"
+            width={750}
+            height={500}
+          />
+          <ImageFigure
+            src="/assets/project8/gallery/icosahedron.png"
+            alt="Gallery Picture"
+            caption="icosahedron (Upsampled)"
+            width={750}
+            height={500}
+          />
+          <ImageFigure
+            src="/assets/project8/gallery/rough-cow.png"
+            alt="Gallery Picture"
+            caption="Cow"
+            width={750}
+            height={500}
+          />
+          <ImageFigure
+            src="/assets/project8/gallery/cow.png"
+            alt="Gallery Picture"
+            caption="Cow (Upsampled)"
+            width={750}
+            height={500}
+          />
+          <ImageFigure
+            src="/assets/project8/gallery/beetle.png"
+            alt="Gallery Picture"
+            caption="Car"
+            width={750}
+            height={500}
+          />
+          <ImageFigure
+            src="/assets/project8/gallery/max-planck.png"
+            alt="Gallery Picture"
+            caption="Max Planck"
             width={750}
             height={500}
           />
         </div>
-      </section> */}
+      </section>
     </div>
   );
 };
