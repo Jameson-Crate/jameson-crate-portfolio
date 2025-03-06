@@ -3,36 +3,7 @@
 import React, { useEffect } from "react";
 import { ArrowLeft } from "lucide-react";
 import Link from "next/link";
-import Image from "next/image";
-
-const ImageFigure = ({
-  src,
-  alt,
-  caption,
-  width = 750,
-  height = 750,
-}: {
-  src: string;
-  alt: string;
-  caption: string;
-  width?: number;
-  height?: number;
-}) => (
-  <figure className="mb-8">
-    <div className="flex justify-center">
-      <Image
-        src={src}
-        alt={alt}
-        width={width}
-        height={height}
-        className="rounded-lg transition-transform hover:scale-105"
-      />
-    </div>
-    <figcaption className="text-sm text-center mt-2 text-gray-500">
-      {caption}
-    </figcaption>
-  </figure>
-);
+import { ImageFigure } from "../components/ImageFigure";
 
 const ProjectPage = () => {
   useEffect(() => {

@@ -31,7 +31,7 @@ const TypingAnimation = ({
       } else {
         clearInterval(typingInterval);
       }
-    }, Math.random() * (100 - 50) + 50);
+    }, Math.random() * (150 - 50) + 50);
 
     return () => clearInterval(typingInterval);
   }, [text]);
