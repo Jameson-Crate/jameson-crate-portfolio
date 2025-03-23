@@ -1,0 +1,10 @@
+[PathTracer] Input scene file: ../dae/sky/CBcoil.dae
+[PathTracer] Rendering using 1 threads
+[PathTracer] Collecting primitives... Done! (0.0003 sec)
+[PathTracer] Building BVH from 7884 primitives... Done! (0.0026 sec)
+[PathTracer] Rendering... 100%! (0.0841s)
+[PathTracer] BVH traced 480000 rays.
+[PathTracer] Average speed 5.7105 million rays per second.
+[PathTracer] Averaged 0.367163 intersection tests per ray.
+[PathTracer] Saving to file: ../docs/images/part-2/CBcoil.png... Done!
+[PathTracer] Job completed.

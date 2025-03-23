@@ -1,0 +1,10 @@
+[PathTracer] Input scene file: ../dae/sky/CBbunny.dae
+[PathTracer] Rendering using 1 threads
+[PathTracer] Collecting primitives... Done! (0.0013 sec)
+[PathTracer] Building BVH from 28588 primitives... Done! (0.0003 sec)
+[PathTracer] Rendering... 100%! (85.6812s)
+[PathTracer] BVH traced 480000 rays.
+[PathTracer] Average speed 0.0056 million rays per second.
+[PathTracer] Averaged 28588.000000 intersection tests per ray.
+[PathTracer] Saving to file: ../docs/images/part-1/CBbunny.png... Done!
+[PathTracer] Job completed.

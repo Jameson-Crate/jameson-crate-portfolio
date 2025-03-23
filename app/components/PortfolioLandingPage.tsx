@@ -86,6 +86,7 @@ const ProjectList = () => {
   const computerGraphicsProjects = [
     { name: "Rasterization Pipeline", description: "Barycentric Coordinates, Supersampling, Mipmaps", number: 7 },
     { name: "Curve and Mesh Editing", description: "Bezier Curves, Triangle Meshes, Loop Subdivision", number: 8 },
+    { name: "Ray Tracing", description: "BVH, Direct & Global Illumination, Adaptive Sampling", number: 9 },
   ];
 
   /* eslint-disable  @typescript-eslint/no-explicit-any */
